@@ -1,0 +1,704 @@
+{
+  "users": [
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/0.jpg",
+        "id": "001234567",
+        "email": "esraa@gmail.com",
+        "phone": "0770123123",
+        "address": "full street",
+        "country": "Jordan",
+        "city": "Irbid",
+        "first_name": "Esraa",
+        "last_name": "Khatib"
+      },
+      "education": [
+        {
+          "date": 2019,
+          "description": "Some description"
+        },
+        {
+          "date": 2021,
+          "description": "another description"
+        }
+      ],
+      "job": {
+        "job_title": "Ux Leader",
+        "department": "Products",
+        "employee_type": "Full time",
+        "start_date": "Oct 12, 2022",
+        "contract_end_date": "Oct 10, 2025",
+        "line_manager": "101234567"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/1.jpg",
+        "id": "001234568",
+        "email": "mohammad@gmail.com",
+        "phone": "0770123124",
+        "address": "another street",
+        "country": "Jordan",
+        "city": "Amman",
+        "first_name": "Mohammad",
+        "last_name": "Attar"
+      },
+      "education": [
+        {
+          "date": 2018,
+          "description": "Some description"
+        },
+        {
+          "date": 2020,
+          "description": "another description"
+        }
+      ],
+      "job": {
+        "job_title": "Software Engineer",
+        "department": "IT",
+        "employee_type": "Full time",
+        "start_date": "Jan 15, 2021",
+        "contract_end_date": "Jan 14, 2024",
+        "line_manager": "101234568"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/2.jpg",
+        "id": "001234569",
+        "email": "reem@gmail.com",
+        "phone": "0770123125",
+        "address": "different street",
+        "country": "Jordan",
+        "city": "Zarqa",
+        "first_name": "Reem",
+        "last_name": "Hasan"
+      },
+      "education": [
+        {
+          "date": 2017,
+          "description": "Some description"
+        },
+        {
+          "date": 2019,
+          "description": "another description"
+        }
+      ],
+      "job": {
+        "job_title": "Data Analyst",
+        "department": "Business Intelligence",
+        "employee_type": "Full time",
+        "start_date": "Mar 20, 2020",
+        "contract_end_date": "Mar 19, 2023",
+        "line_manager": "101234569"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/3.jpg",
+        "id": "001234570",
+        "email": "layla@gmail.com",
+        "phone": "0770123126",
+        "address": "main street",
+        "country": "Jordan",
+        "city": "Aqaba",
+        "first_name": "Layla",
+        "last_name": "Sharif"
+      },
+      "education": [
+        {
+          "date": 2016,
+          "description": "Some description"
+        },
+        {
+          "date": 2018,
+          "description": "another description"
+        }
+      ],
+      "job": {
+        "job_title": "HR Manager",
+        "department": "Human Resources",
+        "employee_type": "Full time",
+        "start_date": "Jun 10, 2019",
+        "contract_end_date": "Jun 9, 2022",
+        "line_manager": "101234570"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/4.jpg",
+        "id": "001234571",
+        "email": "yara@gmail.com",
+        "phone": "0770123127",
+        "address": "north street",
+        "country": "Jordan",
+        "city": "Mafraq",
+        "first_name": "Yara",
+        "last_name": "Ghazawi"
+      },
+      "education": [
+        {
+          "date": 2020,
+          "description": "Some description"
+        },
+        {
+          "date": 2022,
+          "description": "another description"
+        }
+      ],
+      "job": {
+        "job_title": "Project Manager",
+        "department": "Operations",
+        "employee_type": "Full time",
+        "start_date": "Jul 01, 2021",
+        "contract_end_date": "Jun 30, 2024",
+        "line_manager": "101234571"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/5.jpg",
+        "id": "001234572",
+        "email": "ahmad@gmail.com",
+        "phone": "0770123128",
+        "address": "south street",
+        "country": "Jordan",
+        "city": "Madaba",
+        "first_name": "Ahmad",
+        "last_name": "Ali"
+      },
+      "education": [
+        {
+          "date": 2015,
+          "description": "Some description"
+        },
+        {
+          "date": 2017,
+          "description": "another description"
+        }
+      ],
+      "job": {
+        "job_title": "Marketing Specialist",
+        "department": "Marketing",
+        "employee_type": "Full time",
+        "start_date": "Feb 05, 2018",
+        "contract_end_date": "Feb 04, 2021",
+        "line_manager": "101234572"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/6.jpg",
+        "id": "001234573",
+        "email": "nour@gmail.com",
+        "phone": "0770123129",
+        "address": "west street",
+        "country": "Jordan",
+        "city": "Karak",
+        "first_name": "Nour",
+        "last_name": "Sayyid"
+      },
+      "education": [
+        {
+          "date": 2021,
+          "description": "Some description"
+        },
+        {
+          "date": 2023,
+          "description": "another description"
+        }
+      ],
+      "job": {
+        "job_title": "Finance Manager",
+        "department": "Finance",
+        "employee_type": "Full time",
+        "start_date": "Apr 15, 2022",
+        "contract_end_date": "Apr 14, 2025",
+        "line_manager": "101234573"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/7.jpg",
+        "id": "001234574",
+        "email": "khaled@gmail.com",
+        "phone": "0770123130",
+        "address": "east street",
+        "country": "Jordan",
+        "city": "Ajloun",
+        "first_name": "Khaled",
+        "last_name": "Nuaimi"
+      },
+      "education": [
+        {
+          "date": 2014,
+          "description": "Some description"
+        },
+        {
+          "date": 2016,
+          "description": "another description"
+        }
+      ],
+      "job": {
+        "job_title": "Graphic Designer",
+        "department": "Design",
+        "employee_type": "Full time",
+        "start_date": "Sep 10, 2017",
+        "contract_end_date": "Sep 09, 2020",
+        "line_manager": "101234574"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/8.jpg",
+        "id": "001234575",
+        "email": "omar@gmail.com",
+        "phone": "0770123131",
+        "address": "city center",
+        "country": "Jordan",
+        "city": "Jarash",
+        "first_name": "Omar",
+        "last_name": "Zahrani"
+      },
+      "education": [
+        {
+          "date": 2013,
+          "description": "Some description"
+        },
+        {
+          "date": 2015,
+          "description": "another description"
+        }
+      ],
+      "job": {
+        "job_title": "Product Manager",
+        "department": "Products",
+        "employee_type": "Full time",
+        "start_date": "Dec 12, 2016",
+        "contract_end_date": "Dec 11, 2019",
+        "line_manager": "101234575"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/9.jpg",
+        "id": "001234576",
+        "email": "sara@gmail.com",
+        "phone": "0770123132",
+        "address": "downtown street",
+        "country": "Jordan",
+        "city": "Tafilah",
+        "first_name": "Sara",
+        "last_name": "Shamrani"
+      },
+      "education": [
+        {
+          "date": 2022,
+          "description": "Some description"
+        },
+        {
+          "date": 2024,
+          "description": "another description"
+        }
+      ],
+      "job": {
+        "job_title": "Content Writer",
+        "department": "Marketing",
+        "employee_type": "Full time",
+        "start_date": "May 03, 2023",
+        "contract_end_date": "May 02, 2026",
+        "line_manager": "101234576"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/10.jpg",
+        "id": "004567890",
+        "email": "abdullah@gmail.com",
+        "phone": "0770123134",
+        "address": "market street",
+        "country": "Jordan",
+        "city": "Salt",
+        "first_name": "Abdullah",
+        "last_name": "Jabri"
+      },
+      "education": [
+        {
+          "date": 2019,
+          "description": "Bachelor's degree in Computer Science"
+        },
+        {
+          "date": 2021,
+          "description": "Master's degree in Data Science"
+        }
+      ],
+      "job": {
+        "job_title": "Software Developer",
+        "department": "IT",
+        "employee_type": "Full time",
+        "start_date": "Jan 10, 2022",
+        "contract_end_date": "Jan 09, 2025",
+        "line_manager": "109876543"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": true
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/11.jpg",
+        "id": "002345678",
+        "email": "farah@gmail.com",
+        "phone": "0770123135",
+        "address": "industrial street",
+        "country": "Jordan",
+        "city": "Ramtha",
+        "first_name": "Farah",
+        "last_name": "Harbi"
+      },
+      "education": [
+        {
+          "date": 2018,
+          "description": "Bachelor's degree in Marketing"
+        },
+        {
+          "date": 2020,
+          "description": "Diploma in Digital Marketing"
+        }
+      ],
+      "job": {
+        "job_title": "Digital Marketer",
+        "department": "Marketing",
+        "employee_type": "Full time",
+        "start_date": "Feb 15, 2021",
+        "contract_end_date": "Feb 14, 2024",
+        "line_manager": "107654321"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/12.jpg",
+        "id": "003456789",
+        "email": "khalid@gmail.com",
+        "phone": "0770123136",
+        "address": "new street",
+        "country": "Jordan",
+        "city": "Ma'an",
+        "first_name": "Khalid",
+        "last_name": "Ansari"
+      },
+      "education": [
+        {
+          "date": 2017,
+          "description": "Bachelor's degree in Finance"
+        },
+        {
+          "date": 2019,
+          "description": "Certified Public Accountant (CPA)"
+        }
+      ],
+      "job": {
+        "job_title": "Accountant",
+        "department": "Finance",
+        "employee_type": "Full time",
+        "start_date": "Mar 20, 2020",
+        "contract_end_date": "Mar 19, 2023",
+        "line_manager": "108765432"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/13.jpg",
+        "id": "009876543",
+        "email": "huda@gmail.com",
+        "phone": "0770123137",
+        "address": "highway street",
+        "country": "Jordan",
+        "city": "Irbid",
+        "first_name": "Huda",
+        "last_name": "Asiri"
+      },
+      "education": [
+        {
+          "date": 2015,
+          "description": "Bachelor's degree in Business Administration"
+        },
+        {
+          "date": 2017,
+          "description": "MBA"
+        }
+      ],
+      "job": {
+        "job_title": "HR Specialist",
+        "department": "Human Resources",
+        "employee_type": "Full time",
+        "start_date": "Jun 05, 2018",
+        "contract_end_date": "Jun 04, 2021",
+        "line_manager": "106543210"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/14.jpg",
+        "id": "005678901",
+        "email": "layla@gmail.com",
+        "phone": "0770123138",
+        "address": "park street",
+        "country": "Jordan",
+        "city": "Amman",
+        "first_name": "Layla",
+        "last_name": "Qahtani"
+      },
+      "education": [
+        {
+          "date": 2016,
+          "description": "Bachelor's degree in Graphic Design"
+        },
+        {
+          "date": 2018,
+          "description": "Certificate in UX/UI Design"
+        }
+      ],
+      "job": {
+        "job_title": "Graphic Designer",
+        "department": "Design",
+        "employee_type": "Full time",
+        "start_date": "Sep 10, 2017",
+        "contract_end_date": "Sep 09, 2020",
+        "line_manager": "105432109"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/15.jpg",
+        "id": "006789012",
+        "email": "nour@gmail.com",
+        "phone": "0770123139",
+        "address": "river street",
+        "country": "Jordan",
+        "city": "Aqaba",
+        "first_name": "Nour",
+        "last_name": "Rashidi"
+      },
+      "education": [
+        {
+          "date": 2020,
+          "description": "Bachelor's degree in Economics"
+        },
+        {
+          "date": 2022,
+          "description": "Master's degree in International Business"
+        }
+      ],
+      "job": {
+        "job_title": "Economist",
+        "department": "Business Intelligence",
+        "employee_type": "Full time",
+        "start_date": "Mar 15, 2021",
+        "contract_end_date": "Mar 14, 2024",
+        "line_manager": "104321098"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/16.jpg",
+        "id": "007890123",
+        "email": "omar@gmail.com",
+        "phone": "0770123140",
+        "address": "mountain street",
+        "country": "Jordan",
+        "city": "Zarqa",
+        "first_name": "Omar",
+        "last_name": "Mutairi"
+      },
+      "education": [
+        {
+          "date": 2014,
+          "description": "Bachelor's degree in Information Technology"
+        },
+        {
+          "date": 2016,
+          "description": "Master's degree in Cybersecurity"
+        }
+      ],
+      "job": {
+        "job_title": "Cybersecurity Analyst",
+        "department": "IT",
+        "employee_type": "Full time",
+        "start_date": "Dec 01, 2017",
+        "contract_end_date": "Nov 30, 2020",
+        "line_manager": "103210987"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/17.jpg",
+        "id": "008901234",
+        "email": "sara@gmail.com",
+        "phone": "0770123141",
+        "address": "beach street",
+        "country": "Jordan",
+        "city": "Madaba",
+        "first_name": "Sara",
+        "last_name": "Omari"
+      },
+      "education": [
+        {
+          "date": 2013,
+          "description": "Bachelor's degree in Communications"
+        },
+        {
+          "date": 2015,
+          "description": "Diploma in Public Relations"
+        }
+      ],
+      "job": {
+        "job_title": "Public Relations Officer",
+        "department": "Communications",
+        "employee_type": "Full time",
+        "start_date": "Jul 20, 2016",
+        "contract_end_date": "Jul 19, 2019",
+        "line_manager": "102109876"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/18.jpg",
+        "id": "009012345",
+        "email": "yasmin@gmail.com",
+        "phone": "0770123142",
+        "address": "village street",
+        "country": "Jordan",
+        "city": "Tafilah",
+        "first_name": "Yasmin",
+        "last_name": "Dosari"
+      },
+      "education": [
+        {
+          "date": 2012,
+          "description": "Bachelor's degree in Environmental Science"
+        },
+        {
+          "date": 2014,
+          "description": "Master's degree in Environmental Management"
+        }
+      ],
+      "job": {
+        "job_title": "Environmental Specialist",
+        "department": "Sustainability",
+        "employee_type": "Full time",
+        "start_date": "Oct 12, 2015",
+        "contract_end_date": "Oct 11, 2018",
+        "line_manager": "101098765"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    },
+    {
+      "personal_information": {
+        "img": "https://randomuser.me/api/portraits/men/19.jpg",
+        "id": "010123456",
+        "email": "hassan@gmail.com",
+        "phone": "0770123143",
+        "address": "valley street",
+        "country": "Jordan",
+        "city": "Karak",
+        "first_name": "Hassan",
+        "last_name": "Farhan"
+      },
+      "education": [
+        {
+          "date": 2011,
+          "description": "Bachelor's degree in Mechanical Engineering"
+        },
+        {
+          "date": 2013,
+          "description": "Master's degree in Renewable Energy"
+        }
+      ],
+      "job": {
+        "job_title": "Mechanical Engineer",
+        "department": "Engineering",
+        "employee_type": "Full time",
+        "start_date": "Nov 05, 2014",
+        "contract_end_date": "Nov 04, 2017",
+        "line_manager": "100987654"
+      },
+      "account": {
+        "password": "12345678",
+        "is_hr": false
+      }
+    }
+  ]
+}

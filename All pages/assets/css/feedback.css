@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+h1 {
+  font-weight: 500;
+  color: #4291af;
+  margin-bottom: 20px;
+}
+
+.FullCard {
+  width: 440px;
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  border: 4px solid rgba(66, 145, 175, 0.7);
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.FullCard img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.8s;
+}
+
+.FullCard:hover img {
+  opacity: 0.4;
+}
+
+.FeedbackText {
+  position: absolute;
+  top: 0;
+  left: 70%;
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  background: rgba(66, 145, 175, 0.85);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s, left 0.5s;
+  overflow: auto;
+}
+
+.FullCard:hover .FeedbackText {
+  left: 0;
+  opacity: 1;
+}
+
+.FeedbackText h3 {
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  margin-top: 40px;
+}
+
+.FeedbackText p {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.CardTitles {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: #eeedeb;
+  color: #4291af;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: left 0.5s;
+}
+
+.FullCard:hover .CardTitles {
+  left: 100%;
+}
+
+.CardTitles :first-child {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.CardTitles a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #4291af;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.dateNN {
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.email {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  word-wrap: break-word;
+  font-weight: 600;
+}
+#ex {
+  display: none;
+}

@@ -1,0 +1,125 @@
+pre {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+label {
+  font-size: 14px;
+}
+.MainLabel {
+  display: block;
+  line-height: 22px;
+  font-weight: bold;
+}
+#HeadDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#DivsContainer {
+  height: 650px;
+  display: flex;
+  padding: 32px;
+  border: lightgray 2px solid;
+}
+#leftDiv {
+  width: 30%;
+}
+#rightDiv {
+  width: 70%;
+}
+.formDiv {
+  margin-bottom: 24px;
+}
+
+#rightDivContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "status priority"
+    "startDate dueDate"
+    "Description Description"
+    "Assign Assign"
+    "supervisor supervisor";
+  column-gap: 20px;
+}
+input,
+select,
+textarea {
+  padding: 7px 12px;
+  border-radius: 4px;
+  border: none;
+  height: 35px;
+}
+#TaskTitle,
+#Status,
+#PrioritiesOptions,
+#StartDate,
+#DueDate,
+#Description {
+  width: 100%;
+  background-color: #eeedeb;
+}
+textarea {
+  height: 127px;
+}
+#PriorityDiv input {
+  height: auto;
+}
+#PrioritiesOptions {
+  display: flex;
+  gap: 20px;
+  height: 35px;
+  align-items: center;
+  background-color: #fff;
+}
+#TaskTitleDiv {
+  grid-area: title;
+}
+#StatusDiv {
+  grid-area: status;
+}
+#PriorityDiv {
+  grid-area: priority;
+}
+#StartDateDiv {
+  grid-area: startDate;
+}
+#DueDateDiv {
+  grid-area: dueDate;
+}
+#DescriptionDiv {
+  grid-area: Description;
+  margin-bottom: 30px;
+}
+#AssignMembersDiv {
+  grid-area: Assign;
+  margin-bottom: 23px;
+}
+#SupervisorDiv {
+  grid-area: supervisor;
+  margin-bottom: 23px;
+}
+#AssignMembersSelect,
+#SupervisorSelect {
+  appearance: none;
+  color: #4291af;
+}
+#ButtonsDiv {
+  display: flex;
+  gap: 12px;
+}
+#CancelBut {
+  padding: 7px 12px;
+  background-color: #eeedeb;
+  color: #565e6c;
+  border-radius: 4px;
+  border: none;
+}
+#CreateBut {
+  padding: 7px 12px;
+  background-color: #4291af;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}

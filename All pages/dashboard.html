@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assest/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/icons.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav_lc"
+            aria-controls="nav_lc"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav_lc">
+            <ul
+              class="d-none d-lg-flex navbar-nav mx-auto my-3 my-lg-0 position-absolute top-50 start-50 translate-middle"
+            >
+              <li class="nav-item me-4">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="Services.html" id="service"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_us.html">Contact Us</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav my-3 my-lg-0 d-lg-none">
+              <li class="nav-item me-4">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="Services.html" id="services"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_us.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="ms-lg-auto d-flex">
+              <a
+                class="btn btn-outline-primary me-2"
+                href="login.html"
+                id="login"
+                >Login</a
+              >
+              <a class="btn btn-primary me-2" href="register.html" id="register"
+                >Register</a
+              >
+              <a class="btn btn-outline-primary me-2" href="#" id="logout"
+                >Logout</a
+              >
+              <a class="btn btn-primary" href="Profile.html" id="profile-info"
+                >Profile</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="dashboard">
+      <aside class="side-bar">
+        <div class="side-bar-log">
+          <img src="assets/images/logo.png" alt="logo" />
+          <div>
+            <h2>Gateway</h2>
+            <p>HR and task system</p>
+          </div>
+        </div>
+        <ul class="side-bar-links">
+          <li class="active">
+            <a href="#"
+              ><div class="dashboard-icon icon"></div>
+              <span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="employees.html"
+              ><div class="employee-icon icon"></div>
+              <span>Employees</span></a
+            >
+          </li>
+          <li>
+            <a href="tasks_tracker.html"
+              ><div class="tasks-icon icon"></div>
+              <span>Tasks Tracker</span></a
+            >
+          </li>
+          <li>
+            <a href="leave_application.html"
+              ><div class="leave-icon icon"></div>
+              <span>Leaves</span></a
+            >
+          </li>
+        </ul>
+      </aside>
+      <div class="page">
+        <h1 class="text-center mt-2">Dashboard</h1>
+        <div class="cards">
+          <div class="card border-primary">
+            <div class="card-header d-flex justify-content-between">
+              <h3>To do</h3>
+              <div class="icon-box bg-primary">
+                <div class="icon tasks-icon"></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="text-primary" id="to-do-tasks-count">0</h4>
+            </div>
+            <div class="card-footer" id="to-do-since-yesterday">
+              +0 since yesterday
+            </div>
+          </div>
+          <div class="card border-warning">
+            <div class="card-header d-flex justify-content-between">
+              <h3>In progress</h3>
+              <div class="icon-box bg-warning">
+                <div class="icon play-icon"></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="text-warning" id="in-progress-tasks-count">0</h4>
+            </div>
+            <div class="card-footer" id="in-progress-since-yesterday">
+              +0 since yesterday
+            </div>
+          </div>
+          <div class="card border-success">
+            <div class="card-header d-flex justify-content-between">
+              <h3>Completed</h3>
+              <div class="icon-box bg-success">
+                <div class="icon complete-icon"></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="text-success" id="completed-tasks-count">0</h4>
+            </div>
+            <div class="card-footer" id="completed-since-yesterday">
+              +0 since yesterday
+            </div>
+          </div>
+          <div class="card border-primary">
+            <div class="card-header d-flex justify-content-between">
+              <h3>On Hold</h3>
+              <div class="icon-box bg-primary">
+                <div class="icon warning-icon"></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="text-primary" id="on-hold-tasks-count">5</h4>
+            </div>
+            <div class="card-footer" id="on-hold-since-yesterday">
+              + 5 since yesterday
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="mt-4">Tables</h2>
+          <div class="tasks-grid">
+            <div class="tables">
+              <!-- <h3>Tables</h3> -->
+              <div class="table-taps">
+                <ul class="my-4 list-group list-group-horizontal table-options">
+                  <li class="list-group-item active">Employees</li>
+                  <li class="list-group-item">Tasks</li>
+                  <li class="list-group-item">Leaves</li>
+                </ul>
+                <input
+                  class="form-control my-4"
+                  type="search"
+                  id="filter"
+                  aria-label="Search"
+                  placeholder="ex. John Smith"
+                />
+              </div>
+              <div class="table-container">
+                <table
+                  class="table table-striped table-hover"
+                  id="employee-table"
+                >
+                  <thead></thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="recent-activities" id="recent-activities">
+              <h3>Recent activities</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50 text-center">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="../index.html"
+                    ><img
+                      src="assest/images/logojpg.jpg"
+                      class="img-fluid"
+                      alt="logo"
+                  /></a>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    GateWay, your comprehensive solution for seamless employee
+                    management. Streamline your HR processes, enhance
+                    productivity, and empower your workforce with our intuitive
+                    and efficient platform."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30 text-center">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="about.html">about</a></li>
+                  <li><a href="contact_us.html">Contact</a></li>
+                </ul>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fa-brands fa-google google-bg"></i>
+</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50 text-center">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Our Location</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>check the map below to know our location</p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d433871.3814302233!2d36.27728529778018!3d31.835335365438436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5fb85d7981af%3A0x631c30c0f8dc65e8!2z2LnZhdmR2KfZhg!5e0!3m2!1sar!2sjo!4v1718740757668!5m2!1sar!2sjo"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>Copyright &copy;2024, All Right Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+    <script type="module" src="assets/javascripts/employee_table.js"></script>
+    <script src="assets/javascripts/bootstrap.js"></script>
+    <script src="assets/javascripts/dashboard.js"></script>
+    <script src="assest/js/navbar.js"></script>
+  </body>
+</html>

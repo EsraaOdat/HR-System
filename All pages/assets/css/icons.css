@@ -1,0 +1,21 @@
+.dashboard-icon {
+    mask: url("../svg/dashboard.svg") no-repeat center;
+  }
+  .employee-icon {
+    mask: url("../svg/employees.svg") no-repeat center;
+  }
+  .tasks-icon {
+    mask: url("../svg/tasks.svg") no-repeat center;
+  }
+  .leave-icon {
+    mask: url("../svg/leave.svg") no-repeat center;
+  }
+  .play-icon {
+    mask: url("../svg/play.svg") no-repeat center;
+  }
+  .complete-icon {
+    mask: url("../svg/complete.svg") no-repeat center;
+  }
+  .warning-icon {
+    mask: url("../svg/warning.svg") no-repeat center;
+  }

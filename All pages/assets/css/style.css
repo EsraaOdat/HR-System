@@ -1,0 +1,278 @@
+:root {
+  --text-color: #565d6d;
+  --primary: #6d31ed;
+  --text-color-white: #fff;
+  --gray: #eee;
+  --light-primary: #f1f8fd;
+  --light-warning: #fef9ee;
+  --light-success: #eefdf3;
+  --border-radius: 5px;
+  --muted: #565d6d;
+  --very-light-gray: #fafafb;
+}
+
+body {
+  background: #fafafb;
+}
+
+th {
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+th:hover {
+  background: #eee;
+}
+
+.table-container {
+  th {
+    position: sticky;
+    top: 0;
+  }
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 650px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 10px;
+  min-height: 100vh;
+}
+
+/* .side-bar {
+  flex-basis: 200px;
+} */
+
+.side-bar-log {
+  padding: 20px;
+  display: flex;
+}
+
+.side-bar-log img {
+  width: 50px;
+  height: min-content;
+}
+.side-bar-log div {
+  margin-left: 5px;
+}
+.side-bar-log h2 {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+.side-bar-log p {
+  font-size: 10px;
+}
+
+.side-bar ul {
+  list-style-type: none;
+}
+.side-bar li {
+  padding: 5px 10px;
+}
+.side-bar a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.side-bar li {
+  border-radius: var(--border-radius);
+  margin: 5px;
+}
+.side-bar li img {
+  height: 1.5rem;
+}
+.side-bar li:hover {
+  background-color: var(--gray);
+  color: var(--text-color-white);
+}
+.side-bar li.active {
+  background-color: var(--primary);
+  color: var(--text-color-white);
+}
+
+.side-bar li.active a {
+  background-color: var(--primary);
+  border-radius: var(--border-radius);
+  color: var(--text-color-white);
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard {
+    display: grid;
+    grid-template-columns: 87px calc(100vw - 97px);
+    gap: 10px;
+    min-height: 100vh;
+  }
+
+  .side-bar-log {
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+  }
+  .side-bar-log h2 {
+    display: none;
+  }
+  .side-bar-log p {
+    display: none;
+  }
+  .side-bar li span {
+    display: none;
+  }
+}
+
+.cards {
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+@media only screen and (max-width: 450px) {
+  .cards {
+    padding: 5px;
+    grid-template-columns: 300px;
+  }
+  .table-taps {
+  }
+}
+
+.icon {
+  margin-right: 5px;
+  width: 25px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  background-color: var(--text-color);
+}
+.active .icon {
+  background-color: var(--text-color-white);
+}
+
+/* .card {
+  height: 200px;
+} */
+.card-header,
+.card-footer {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.card-body {
+  height: 50px;
+  margin-bottom: 10px;
+}
+.card-header {
+  margin-top: 10px;
+}
+.card-header h3 {
+  font-size: 20px;
+}
+
+.icon-box .icon {
+  background-color: var(--text-color-white);
+  scale: 1.5;
+  margin-left: 10px;
+  margin-top: 7.5px;
+}
+
+.icon-box {
+  border-radius: 10px;
+  display: flex;
+  width: 45px;
+  height: 45px;
+}
+
+.card-body h4 {
+  font-size: 35px;
+}
+
+.card.border-primary {
+  background-color: var(--light-primary);
+}
+.card.border-warning {
+  background-color: var(--light-warning);
+}
+.card.border-success {
+  background-color: var(--light-success);
+}
+
+.tasks-grid {
+  padding: 10px;
+}
+
+.recent-activities {
+  display: none;
+  border: #565d6d solid 1px;
+  background: #fff;
+  padding: 20px;
+  border-radius: var(--border-radius);
+}
+@media only screen and (min-width: 1230px) {
+  .tasks-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+  }
+  .recent-activities {
+    display: block;
+  }
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.avatar img {
+  width: 70px;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+
+.action {
+  background: #fafafb;
+  padding: 20px;
+}
+.action-title {
+  font-size: 1.2rem;
+}
+
+.table-taps {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 520px) {
+  .table-taps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+  }
+}
+
+.table-taps > input {
+  width: 150px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}

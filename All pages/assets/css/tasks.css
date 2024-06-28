@@ -1,0 +1,75 @@
+.task-page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  button {
+    height: 40px;
+  }
+  align-items: center;
+}
+.tasks {
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: stretch;
+  gap: 10px;
+}
+
+.tasks-container {
+  background: var(--gray);
+  border-radius: var(--border-radius);
+  padding: 5px;
+  height: 100%;
+}
+
+.tasks-group {
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 10px;
+  min-height: 60vh;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+}
+
+.tasks-group-header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  span {
+    display: block;
+    color: var(--muted);
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+}
+
+.to-do .tasks-group-header {
+  border-top: solid var(--bs-success);
+  border-radius: var(--border-radius);
+}
+.in-progress .tasks-group-header {
+  border-top: solid var(--bs-warning);
+  border-radius: var(--border-radius);
+}
+.on-hold .tasks-group-header {
+  border-top: solid var(--bs-primary);
+  border-radius: var(--border-radius);
+}
+.completed .tasks-group-header {
+  border-top: solid var(--bs-success);
+  border-radius: var(--border-radius);
+}
+.canceled .tasks-group-header {
+  border-top: solid var(--bs-danger);
+  border-radius: var(--border-radius);
+}
+
+.task {
+  padding: 10px;
+  background: #fff;
+  border-radius: var(--border-radius);
+  margin-bottom: 5px;
+  .badge {
+    margin-bottom: 5px;
+  }
+}

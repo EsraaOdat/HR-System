@@ -1,0 +1,122 @@
+[
+  {
+    "Task ID": "T001",
+    "Task Name": "Develop new control system",
+    "Assigned To": ["E02002", "E02006"],
+    "Due Date": "2024-07-15"
+  },
+  {
+    "Task ID": "T002",
+    "Task Name": "Analyze sales data",
+    "Assigned To": ["E02003", "E02026"],
+    "Due Date": "2024-06-30"
+  },
+  {
+    "Task ID": "T003",
+    "Task Name": "Upgrade network infrastructure",
+    "Assigned To": ["E02004", "E02007"],
+    "Due Date": "2024-08-01"
+  },
+  {
+    "Task ID": "T004",
+    "Task Name": "Redesign IT architecture",
+    "Assigned To": ["E02005", "E02017"],
+    "Due Date": "2024-07-20"
+  },
+  {
+    "Task ID": "T005",
+    "Task Name": "Oversee manufacturing processes",
+    "Assigned To": ["E02006", "E02002"],
+    "Due Date": "2024-07-10"
+  },
+  {
+    "Task ID": "T006",
+    "Task Name": "Prepare financial report",
+    "Assigned To": ["E02008", "E02009"],
+    "Due Date": "2024-06-25"
+  },
+  {
+    "Task ID": "T007",
+    "Task Name": "Manage IT security",
+    "Assigned To": ["E02010", "E02012"],
+    "Due Date": "2024-07-05"
+  },
+  {
+    "Task ID": "T008",
+    "Task Name": "Lead project team",
+    "Assigned To": ["E02011", "E02015"],
+    "Due Date": "2024-07-22"
+  },
+  {
+    "Task ID": "T009",
+    "Task Name": "Review marketing strategy",
+    "Assigned To": ["E02016", "E02029"],
+    "Due Date": "2024-06-28"
+  },
+  {
+    "Task ID": "T010",
+    "Task Name": "Conduct market research",
+    "Assigned To": ["E02013", "E02030"],
+    "Due Date": "2024-07-02"
+  },
+  {
+    "Task ID": "T011",
+    "Task Name": "Coordinate training sessions",
+    "Assigned To": ["E02014", "E02020"],
+    "Due Date": "2024-06-29"
+  },
+  {
+    "Task ID": "T012",
+    "Task Name": "Implement new software",
+    "Assigned To": ["E02017", "E02005"],
+    "Due Date": "2024-07-18"
+  },
+  {
+    "Task ID": "T013",
+    "Task Name": "Design marketing campaign",
+    "Assigned To": ["E02015", "E02016"],
+    "Due Date": "2024-07-25"
+  },
+  {
+    "Task ID": "T014",
+    "Task Name": "Audit financial statements",
+    "Assigned To": ["E02018", "E02022"],
+    "Due Date": "2024-06-24"
+  },
+  {
+    "Task ID": "T015",
+    "Task Name": "Create business analysis report",
+    "Assigned To": ["E02019", "E02033"],
+    "Due Date": "2024-07-08"
+  },
+  {
+    "Task ID": "T016",
+    "Task Name": "Evaluate IT systems",
+    "Assigned To": ["E02021", "E02023"],
+    "Due Date": "2024-07-30"
+  },
+  {
+    "Task ID": "T017",
+    "Task Name": "Enhance cybersecurity measures",
+    "Assigned To": ["E02024", "E02035"],
+    "Due Date": "2024-07-06"
+  },
+  {
+    "Task ID": "T018",
+    "Task Name": "Develop marketing content",
+    "Assigned To": ["E02028", "E02030"],
+    "Due Date": "2024-06-27"
+  },
+  {
+    "Task ID": "T019",
+    "Task Name": "Plan corporate event",
+    "Assigned To": ["E02025", "E02034"],
+    "Due Date": "2024-08-05"
+  },
+  {
+    "Task ID": "T020",
+    "Task Name": "Optimize financial processes",
+    "Assigned To": ["E02027", "E02032"],
+    "Due Date": "2024-07-12"
+  }
+]

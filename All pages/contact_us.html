@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/livecanvas-team/ninjabootstrap/dist/css/bootstrap.min.css"
+    media="all"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <!-- Icon Font Stylesheet -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assest/css/home-about.css" />
+  <link rel="stylesheet" href="assest/css/footer.css" />
+  
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Nunito, sans-serif;
+      margin: 0;
+      padding: 0px;
+    }
+
+    .contact_us_green .responsive-container-block {
+      min-height: 75px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .contact_us_green .text-blk {
+      margin: 0px;
+      line-height: 25px;
+    }
+
+    .contact_us_green .responsive-cell-block {
+      min-height: 75px;
+    }
+
+    .contact_us_green .responsive-container-block.container {
+      width: 1000px;
+    }
+
+    .contact_us_green .responsive-container-block.big-container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-top: 35px;
+    }
+
+    .contact_us_green .text-blk.contactus-subhead {
+      max-width: 385px;
+      color: #4291AF;
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+
+    .contact_us_green .con {
+      scale: 1.7;
+      margin-right: 30px;
+      color: white;
+      align-content: center;
+    }
+
+    .mes {
+      scale: 1.5;
+      margin-right: 30px;
+    }
+
+    .contact_us_green .social-media-links {
+      margin: 100px auto 0px auto;
+      width: 250px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .contact_us_green .text-box {
+      display: flex;
+      padding: 20px;
+      margin: 40px auto;
+      font-size: 20px;
+      width: 90%;
+      border-radius: 16px;
+      transition: 0.2s;
+    }
+
+    .contact_us_green .contact-text {
+      color: #eeedeb;
+      margin-bottom: 0px;
+    }
+
+    .contact_us_green .input {
+      height: 35px;
+      width: 100%;
+      font-size: 18px;
+      padding: 8px 5px;
+      border: solid 0.5px rgba(182, 182, 182, 0.5);
+      color: black;
+    }
+
+    .contact_us_green .textinput {
+      height: 70px;
+      width: 100%;
+      font-size: 16px;
+      padding: 5px;
+      border: solid 0.5px rgba(182, 182, 182, 0.5);
+      color: black;
+    }
+
+    .contact_us_green input:focus,
+    .contact_us_green textarea:focus {
+      outline: none;
+      color: black;
+    }
+
+    .contact_us_green .radio-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .contact_us_green .radio-wrapper input[type="radio"] {
+      margin-right: 0.2px;
+      scale: 1.2;
+    }
+
+    .contact_us_green .radio-wrapper label {
+      font-size: 18px;
+      color: #202429;
+    }
+
+    .contact_us_green .radio-wrapper input[type="radio"]:checked+label {
+      font-weight: bold;
+    }
+
+    .contact_us_green .submit-btn {
+      border: solid 0.5px rgba(182, 182, 182, 0.5);
+      background-color: #4291AF;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 13px 0;
+      outline: none;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 250px;
+      align-self: flex-start;
+      margin-top: 0px;
+    }
+
+    .contact_us_green .submit-btn:hover {
+      border: 2px solid #EEEDEB;
+      background-color: #4291AF;
+      color: #EEEDEB;
+    }
+
+    .contact_us_green .text-blk.input-title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      color: #202429;
+    }
+
+    .contact_us_green .responsive-cell-block {
+      width: 100%;
+      font-size: 20px;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .contact_us_green .head-text-box {
+      display: none;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+    *,
+    *:before,
+    *:after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: rgb(246, 246, 246);
+    }
+
+    #i69b-2 {
+      width: 50%;
+      height: 670px;
+      display: flex;
+      padding: 0px 40px;
+      align-items: center;
+      background-color: white;
+    }
+
+    #ifgi {
+      width: 50%;
+      height: 670px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      background: #4291AF;
+    }
+
+    #pra {
+      margin: 20px 0;
+      font-size: 25px;
+    }
+
+    .contact_us_green .text-box:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      border: solid 2px whitesmoke;
+      border-radius: 16px;
+
+      .contact-text {
+        color: white;
+      }
+
+      .con {
+        color: white;
+      }
+    }
+
+    .soc {
+      scale: 1.9;
+      height: 27px;
+      width: 27px;
+      margin-right: 70px;
+      color: white;
+      border-radius: 100%;
+      transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+      text-align: center;
+      align-content: center;
+    }
+
+    .soc:hover {
+      color: #eeeeee;
+      background-color: rgba(255, 255, 255, 0.3);
+      ;
+    }
+    .emailSpan {
+      color: #703637;
+      display: none;
+    }
+    .modal-dialog{
+      display: none;
+    }
+    @media (max-width: 426px) {
+      .contact_us_green .responsive-container-block.big-container {
+        padding: 20px;
+        height: auto;
+      }
+
+      .contact_us_green .text-blk.contactus-head {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 10px;
+      }
+
+      .contact_us_green .text-blk.contactus-subhead {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .contact_us_green .social-media-links {
+        margin: 30px auto 10px auto;
+        width: 100%;
+        justify-content: space-around;
+      }
+
+      .contact_us_green .text-box {
+        padding: 1px;
+        margin: 25px auto 25px auto;
+      }
+
+      #i69b-2 {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      #ifgi {
+        width: 100%;
+        height: auto;
+      }
+
+      #pra {
+        font-size: 13px;
+        margin-bottom: 3px;
+        line-height: 20px;
+      }
+
+      .contact_us_green .input,
+      .contact_us_green .textinput {
+        font-size: 13px;
+        padding: 8px;
+      }
+
+      .contact_us_green .submit-btn {
+        width: 160px;
+        padding: 8px;
+        font-size: 13px;
+      }
+
+      .soc {
+        margin-right: 30px;
+        scale: 1.5;
+      }
+
+      .contact_us_green .contact-text {
+        padding: 0px;
+        font-size: 13px;
+      }
+
+      .contact_us_green .radio-wrapper label {
+        font-size: 13px;
+      }
+
+      .contact_us_green .con {
+        scale: 1.2;
+      }
+
+      .contact_us_green .text-blk.input-title {
+        font-size: 13px;
+      }
+
+      .mes {
+        scale: 1.5;
+        margin-right: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            class="img-fluid"
+            src="assest/images/logojpg.jpg"
+            alt="GateWay-logo"
+            width="48px"
+            height="48px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav_lc"
+          aria-controls="nav_lc"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav_lc">
+          <ul
+            class="d-none d-lg-flex navbar-nav mx-auto my-3 my-lg-0 position-absolute top-50 start-50 translate-middle">
+            <li class="nav-item me-4">
+              <a class="nav-link" href="../index.html" style="padding-right: 0 !important;">Home</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link " href="All pages/Services.html" id="service">Services</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="about.html" >About</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="contact_us.html">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav my-3 my-lg-0 d-lg-none">
+            <li class="nav-item me-4">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="Services.html" id="services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_us.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="ms-lg-auto d-flex">
+            <a class="btn btn-outline-primary me-2" href="login.html" id="login"
+              >Login</a
+            >
+            <a class="btn btn-primary me-2" href="register.html" id="register"
+              >Register</a
+            >
+            <a class="btn btn-outline-primary me-2" href="#" id="logout"
+              >Logout</a
+            >
+            <a class="btn btn-primary" href="Profile.html" id="profile-info"
+              >Profile</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Modal -->
+  <div class="modal fade modal-dialog modal-dialog-centered" class="exampleModalClass" id="exampleModal"  data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+         Thanks for your feedback!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="window.location.href ='../index.html'">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact_us_green">
+    <div class="responsive-container-block big-container">
+      <div class="responsive-container-block container">
+        <div class="responsive-cell-block" id="ifgi">
+          <div class="container-box">
+            <div class="workik-contact-bigbox">
+              <div class="workik-contact-box">
+                <div class="mail text-box">
+                  <a target="_blank" href="mailto:Gateway@gmail.com"><i class="fa-solid fa-envelope con"></i></a>
+                  <p class="contact-text">
+                    Gateway@gmail.com
+                  </p>
+                </div>
+                <div class="phone text-box">
+                  <a href="tel:+962  787  333 555"><i class="fa-solid fa-phone con"></i></a>
+                  <p class="contact-text">
+                    +962 787 333 555
+                  </p>
+                </div>
+                <div class="address text-box">
+                  <i class="fa-solid fa-location-dot con"></i>
+                  <p class="contact-text">
+                    Amman 11821, Sultan Sulayman Al Qanuni St., Shmeisani.
+                  </p>
+                </div>
+              </div>
+              <div class="social-media-links">
+                <a target="_blank" href="https://www.facebook.com/index.php/">
+                  <i class="fa-brands fa-facebook-f soc"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/">
+                  <i class="fa-brands fa-instagram soc"></i>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/home">
+                  <i class="fa-brands fa-linkedin-in soc"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block" id="i69b-2">
+          <form class="form-box" id="contact-us-form">
+            <div class="container-block form-wrapper">
+              <div class="head-text-box">
+                <p class="text-blk contactus-head">
+                  Contact us
+                </p>
+                <p class="text-blk contactus-subhead">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim
+                </p>
+              </div>
+              <div class="responsive-container-block">
+                <p class="text-blk input-title" id="pra">Send a feedback!</p>
+                <div class="responsive-cell-block">
+                  <p class="text-blk input-title">
+                    Name
+                  </p>
+                  <input required class="input" id="name" name="FirstName">
+                </div>
+                <div class="responsive-cell-block">
+                  <p class="text-blk input-title">
+                    Title
+                  </p>
+                  <input required class="input" id="title" name="Title">
+                </div>
+                <div class="responsive-cell-block">
+                  <p class="text-blk input-title">
+                    Email
+                  </p>
+                  <input type="email" required class="input" id="email" name="Email" onblur="emailErr()">
+                  <span class="emailSpan">The email is not valid</span>
+                </div>
+              </div>
+              <div class="responsive-cell-block">
+                <p class="text-blk input-title">
+                  Subject
+                </p>
+                <input required class="input" id="subject" name="Subject">
+              </div>
+              <div class="responsive-cell-block">
+                <p class="text-blk input-title" id="urmsg">
+                  Your message
+                </p>
+                <textarea required class="textinput" id="message"></textarea>
+              </div>
+              <div class="responsive-cell-block">
+                <p class="text-blk input-title">
+                  Gender
+                </p>
+                <div class="radio-wrapper">
+                  <input type="radio" name="gender" id="male" checked>
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" id="female">
+                  <label for="female">Female</label>
+                </div>
+              </div>
+              <div class="btn-wrapper">
+                <button class="submit-btn" type="submit" >
+                  <i class="fa-solid fa-paper-plane mes"></i>
+                  Send Message
+                </button>
+              </div>
+            </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50 text-center">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="../index.html"><img src="assest/images/logojpg.jpg" class="img-fluid" alt="logo" /></a>
+              </div>
+              <div class="footer-text">
+                <p>
+                  GateWay, your comprehensive solution for seamless employee
+                  management. Streamline your HR processes, enhance
+                  productivity, and empower your workforce with our intuitive
+                  and efficient platform."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30 text-center">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Useful Links</h3>
+              </div>
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+              </ul>
+              <div class="footer-social-icon">
+                <span>Follow us</span>
+                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                <a href="#"><i class="fa-brands fa-google google-bg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-50 text-center">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Our Location</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>check the map below to know our location</p>
+              </div>
+              <div class="subscribe-form">
+                <form action="#">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d433871.3814302233!2d36.27728529778018!3d31.835335365438436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5fb85d7981af%3A0x631c30c0f8dc65e8!2z2LnZhdmR2KfZhg!5e0!3m2!1sar!2sjo!4v1718740757668!5m2!1sar!2sjo"
+                    style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+            <div class="copyright-text">
+              <p>Copyright &copy;2024, All Right Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="assets/javascripts/bootstrap.js"></script>
+  <script src="assets/javascripts/popper.min.js"></script>
+  <script src="assest/js/navbar.js"></script>
+
+
+
+  <script>
+    const myModal = document.getElementById('feedback-message')
+
+    // myInput.focus()
+
+
+
+
+    let nameL = document.getElementById('name');
+    let titleL = document.getElementById('title');
+    let emailL = document.getElementById('email');
+    let subjectL = document.getElementById('subject');
+    let messageL = document.getElementById('message');
+    var emailSpan = document.querySelector('.emailSpan');
+    function SaveFeedback() {
+      var formEntry = {
+        Name: nameL.value,
+        Title: titleL.value,
+        Email: emailL.value,
+        Subject: subjectL.value,
+        Message: messageL.value,
+        Gender: document.getElementById('male').checked ? 'Male' : 'Female',
+        Date: new Date().toISOString()
+      };
+      var entries = JSON.parse(localStorage.getItem('feedbackEntries')) || [];
+      entries.push(formEntry);
+      localStorage.setItem('feedbackEntries', JSON.stringify(entries));
+      const myModal = document.getElementById('exampleModal')
+      let modalDialog = document.getElementsByClassName('modal-dialog')[1]
+      if (!bootstrap.Modal.getInstance(myModal)) {
+        new bootstrap.Modal(myModal);
+      }
+      bootstrap.Modal.getInstance(myModal).show();
+      modalDialog.style.display='block';
+    }
+document.getElementById("contact-us-form").addEventListener("submit", event => {event.preventDefault(); SaveFeedback()})
+    const ContactEmailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    function emailErr() {
+      if (ContactEmailRegex.test(emailL.value)) {
+        emailSpan.style.display = 'none';
+      }
+      else {
+        emailSpan.style.display = 'inline';
+      }
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+body {
+  background-color: #ffffff;
+}
+
+nav {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+nav .menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+/* header-------------------------------- */
+
+.profile-details {
+  max-width: 1800px;
+  margin: 20px auto;
+  background-color: #eeedeb;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.profile-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.profile-info .status {
+  color: green;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: rgb(211, 225, 211);
+  font-family: sans-serif;
+  padding: 5px;
+  border-radius: 5px;
+  /* margin-left: 10px; */
+}
+
+.profile-info .position,
+.profile-info .department {
+  margin-top: 5px;
+  color: #666;
+}
+.profile-info .position i,
+.profile-info .department i {
+  margin-right: 5px;
+}
+
+.edit-profile {
+  background-color: #4291af;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.edit-profile:hover {
+  background-color: white;
+  color: #4291af;
+  font-weight: bold;
+}
+.bx bx-edit-alt{ 
+   background-color: #4291af;
+  color: #ffffff;
+}
+
+
+.bx bx-edit-alt:hover{
+  background-color: white;
+  color: #4291af;
+  font-weight: bold;
+}
+
+/* Personal Information- ----------------------------------------------- */
+
+.general-information,
+.job-information {
+  margin-top: 20px;
+}
+.general-information h2,
+.job-information h2 {
+  color: #4291af;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #eeedeb;
+  font-family: Epilogue;
+  font-size: 27px;
+}
+/* 
+h3 {
+  color: rgb(134, 0, 128);
+} */
+
+table {
+  background-color: #eeedeb;
+}
+.info-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-section th {
+  font-family: Manrope;
+  font-size: 25px;
+  padding: 1%;
+  line-height: 24px;
+  font-weight: bold;
+  font-weight: 500;
+  color: rgb(30, 30, 79);
+}
+
+.info-section td {
+  font-family: Manrope;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 1%;
+  color: #171a1fff;
+}
+
+.info-section th,
+.info-section td {
+  text-align: left;
+}
+
+/* Education ------------------------------------------------ */
+.education {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+}
+.education div {
+  flex: 1;
+  padding: 10px;
+  /* background-color: #fafafa; */
+  border-radius: 8px;
+}
+.education span {
+  font-weight: bold;
+  font-weight: 400px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+
+.education p {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+/* job----------------------------------------- */
+.job-information .item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 20px;
+
+  background-color: #eeedeb;
+}
+.job-information .item div {
+  flex: 1;
+}
+.job-information .item p {
+  font-family: Manrope;
+  font-size: 23px;
+  line-height: 24px;
+  font-weight: bold;
+  font-weight: 500;
+  color: rgb(30, 30, 79);
+  margin: 5px 0;
+}
+.job-information .item p span{font-size: 20;
+  color:black;}
+  @media only screen and (max-width: 450px) {
+
+
+    
+
+    .education {
+      display: flex;
+      /* gap: 20px; */
+      margin-top: 10px;
+      flex-direction: column;
+    }
+    
+    .education div {
+      flex: 1;
+      padding: 10px;
+      background-color: #eeedeb;
+      border-radius: 8px;
+      border: 1px black solid;
+    }
+    
+    .job-information .item {
+      display: flex;
+      /* flex-wrap: wrap; */
+      /* gap: 20px; */
+      background-color: #eeedeb;
+      flex-direction: column;
+    }
+    
+    
+    .job-information .item p {
+      margin: 3px;
+    }
+    
+    
+    .profile-header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: stretch;
+    }
+    
+    } 

@@ -1,0 +1,120 @@
+/* start register page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+.passwordContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(imges/596e74da-c919-430c-9f48-2181d2c9cc36.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.login {
+  width: 600px;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  color: #000000;
+  border-radius: 12px;
+  padding: 15px 15px;
+  margin: 65px auto;
+}
+.login span {
+  color: #2a0cd5db;
+  font-size: larger;
+}
+.login h1 {
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+}
+.login .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 45px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255, 2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #000;
+  padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder {
+  color: rgb(4, 4, 4);
+}
+.input-box i {
+  position: absolute;
+  top: 30%;
+  transform: translate(-50px);
+  font-size: 20px;
+}
+.login .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: -15px 0 15px;
+}
+.remember-forgot label input {
+  margin-right: 3px;
+}
+.remember-forgot a {
+  color: #040404;
+  text-decoration: none;
+}
+.remember-forgot a:hover {
+  text-decoration: underline;
+  color: #05bbed;
+}
+.login .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+.login .rejister-link {
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.rejister-link p a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: large;
+}
+.rejister-link p a:hover {
+  text-decoration: underline;
+  color: rgb(0, 255, 0);
+}
+
+.error.success {
+  color: rgb(0, 255, 0);
+  margin-top: 7px;
+}
+
+.error.showError {
+  color: rgb(255, 0, 0);
+  margin-top: 6px;
+}
+
+/* end register page */

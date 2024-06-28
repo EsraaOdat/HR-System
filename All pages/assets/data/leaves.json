@@ -1,0 +1,55 @@
+[
+  {
+    "employee_id": "E001",
+    "name": "John Doe",
+    "department": "Human Resources",
+    "leave_records": [
+      {
+        "leave_id": "L001",
+        "type": "Sick Leave",
+        "start_date": "2024-01-15",
+        "end_date": "2024-01-20",
+        "reason": "Flu",
+        "approved": true
+      },
+      {
+        "leave_id": "L002",
+        "type": "Annual Leave",
+        "start_date": "2024-03-10",
+        "end_date": "2024-03-15",
+        "reason": "Vacation",
+        "approved": true
+      }
+    ]
+  },
+  {
+    "employee_id": "E002",
+    "name": "Jane Smith",
+    "department": "Finance",
+    "leave_records": [
+      {
+        "leave_id": "L003",
+        "type": "Maternity Leave",
+        "start_date": "2024-04-01",
+        "end_date": "2024-07-01",
+        "reason": "Maternity",
+        "approved": true
+      }
+    ]
+  },
+  {
+    "employee_id": "E003",
+    "name": "Ahmed Khan",
+    "department": "IT",
+    "leave_records": [
+      {
+        "leave_id": "L004",
+        "type": "Casual Leave",
+        "start_date": "2024-05-15",
+        "end_date": "2024-05-17",
+        "reason": "Personal Work",
+        "approved": true
+      }
+    ]
+  }
+]

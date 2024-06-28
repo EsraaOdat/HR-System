@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/livecanvas-team/ninjabootstrap/dist/css/bootstrap.min.css"
+    media="all" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+  <!--testimonial-->
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+    href="https://unpkg.com/bs-brain@2.0.4/components/testimonials/testimonial-3/assets/css/testimonial-3.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="All pages/assest/css/home-about.css" />
+  <link rel="stylesheet" href="All pages/assest/css/footer.css" />
+  <title>GateWay</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <img class="img-fluid" src="All pages/assest/images/logojpg.jpg" alt="GateWay-logo" width="48px"
+            height="48px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav_lc"
+          aria-controls="nav_lc" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav_lc">
+          <ul
+            class="d-none d-lg-flex navbar-nav mx-auto my-3 my-lg-0 position-absolute top-50 start-50 translate-middle">
+            <li class="nav-item me-4">
+              <a class="nav-link" href="index.html" style="padding-right: 0 !important;">Home</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link " href="All pages/Services.html" id="service">Services</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="All pages/about.html" >About</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="All pages/contact_us.html">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav my-3 my-lg-0 d-lg-none">
+            <li class="nav-item me-4">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="All pages/Services.html" id="services">Services</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="All pages/about.html">About</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="All pages/contact_us.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="ms-lg-auto d-flex">
+            <a class="btn btn-outline-primary me-2 " href="All pages/login.html" id="login">Login</a>
+            <a class="btn btn-primary me-2" href="All pages/register.html" id="register">Register</a>
+            <a class="btn btn-outline-primary me-2 " href="#" id="logout">Logout</a>
+            <a class="btn btn-primary" href="All pages/Profile.html" id="profile-info">Profile</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="justforC" style="text-align: center">
+    <main>
+      <div class="toast-container position-fixed top-5 end-0 p-2">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-body">
+            <span id="message"> Hello, world! This is a toast message.</span>
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="All pages/assest/images/banner2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block custom-caption">
+              <h5>GateWay</h5>
+              <p>
+                Your Place to enhance productivity, and empower your
+                workforce.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="All pages/assest/images/home1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block custom-caption">
+              <h5>GateWay</h5>
+              <p>Comprehensive solution for seamless employee management.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="All pages/assest/images/banner.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block custom-caption">
+              <h5>GateWay</h5>
+              <p>HR needs are met with precision and flexibility.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="partnerships-container">
+        <h1>Trust built on 2000+ global partnerships.</h1>
+        <div class="logos">
+          <div class="logo-item">
+            <img src="All pages/assest/images/Image 22.png" alt="Apex Fusion" />
+            <p>Apex Fusion</p>
+          </div>
+          <div class="logo-item">
+            <img src="All pages/assest/images/Image 23.png" alt="Nebula Dynamics" />
+            <p>Nebula Dynamics</p>
+          </div>
+          <div class="logo-item">
+            <img src="All pages/assest/images/Image 24.png" alt="Virtuoso" />
+            <p>Virtuoso</p>
+          </div>
+          <div class="logo-item">
+            <img src="All pages/assest/images/Image 25.png" alt="Quantum" />
+            <p>Quantum</p>
+          </div>
+          <div class="logo-item">
+            <img src="All pages/assest/images/Image 26.png" alt="Pinnacle Nexus" />
+            <p>Pinnacle Nexus</p>
+          </div>
+          <div class="logo-item">
+            <img src="All pages/assest/images/Image 27.png" alt="Elysium Global" />
+            <p>Elysium Global</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container section">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Welcome to GateWay</h3>
+            <p>
+              "Welcome to GateWay, your comprehensive solution for seamless
+              employee management. Our platform is designed to streamline your
+              HR processes, enhance productivity, and empower your workforce.
+              From recruitment and onboarding to performance management, we
+              offer an intuitive and efficient system to manage every aspect
+              of your HR operations. Experience the benefits of automated
+              workflows, detailed analytics, and centralized employee
+              information, all in one user-friendly interface. Our
+              customizable features ensure that your HR needs are met with
+              precision and flexibility. Join countless organizations that
+              have transformed their HR operations with GateWay, and take the
+              first step towards a more organized and productive workplace."
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="https://preview.ibb.co/erdq8p/Employee-1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="https://preview.ibb.co/cu76g9/Employee-2.jpg" alt="" />
+          </div>
+          <div class="col-md-6">
+            <h3>The key strengths and benefits of choosing GateWay system</h3>
+            <p>
+              "At GateWay, we believe that HR management should be simple and
+              efficient. We offer comprehensive solutions that cater to your
+              company's needs with an intuitive user interface and a
+              personalized experience. Our advanced technology streamlines
+              processes, reduces errors, and boosts productivity, giving you
+              more time to focus on what truly matters – the growth and
+              success of your team."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="section-title text-center mb-4 pb-2">
+              <h4 class="title mb-4">Why Us?</h4>
+              <p class="text-muted para-desc mx-auto mb-0"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+            <div class="card service-wrapper rounded border-0 shadow p-4">
+              <div class="icon text-center text-custom h1 shadow rounded bg-white">
+                <span class="uim-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                    <rect width="20" height="15" x="2" y="3" class="uim-tertiary" rx="3"></rect>
+                    <path class="uim-primary"
+                      d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+              <div class="content mt-4">
+                <h5 class="title">Fully Responsive</h5>
+                <p class="text-muted mt-3 mb-0">
+                  It seamlessly adapts to all screen sizes (desktops, tablets,
+                  smartphones), optimizing viewing experience. This ensuring
+                  your content is always presented perfectly.
+                </p>
+              </div>
+              <div class="big-icon h1 text-custom">
+                <span class="uim-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                    <rect width="20" height="15" x="2" y="3" class="uim-tertiary" rx="3"></rect>
+                    <path class="uim-primary"
+                      d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+            <div class="card service-wrapper rounded border-0 shadow p-4">
+              <div class="icon text-center text-custom h1 shadow rounded bg-white">
+                <span class="uim-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                    width="1em">
+                    <path class="uim-quaternary"
+                      d="M15,2c-3.3772,0.00142-6.27155,2.41462-6.88025,5.73651c2.90693-1.59074,6.553-0.52375,8.14374,2.38317c0.98206,1.79462,0.98206,3.96594,0,5.76057c3.8013-0.69634,6.31837-4.3424,5.62202-8.14369C21.27662,4.41261,18.37925,1.99872,15,2z">
+                    </path>
+                    <circle cx="7" cy="17" r="5" class="uim-primary"></circle>
+                    <path class="uim-tertiary"
+                      d="M11,7c-3.08339,0.00031-5.66461,2.33759-5.97,5.40582c2.5358-1.08949,5.47469,0.08297,6.56418,2.61877c0.54113,1.25947,0.54113,2.68593,0,3.94541c3.29729-0.32786,5.7045-3.26663,5.37664-6.56392C16.66569,9.33735,14.08386,6.99972,11,7z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+              <div class="content mt-4">
+                <h5 class="title">Fresh Layouts</h5>
+                <p class="text-muted mt-3 mb-0">
+                  Designed to captivate, with innovative elements and modern
+                  aesthetics, fresh layouts ensure engaging, visually
+                  appealing user experiences that make your content stand out
+                  effectively.
+                </p>
+              </div>
+              <div class="big-icon h1 text-custom">
+                <span class="uim-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                    width="1em">
+                    <path class="uim-quaternary"
+                      d="M15,2c-3.3772,0.00142-6.27155,2.41462-6.88025,5.73651c2.90693-1.59074,6.553-0.52375,8.14374,2.38317c0.98206,1.79462,0.98206,3.96594,0,5.76057c3.8013-0.69634,6.31837-4.3424,5.62202-8.14369C21.27662,4.41261,18.37925,1.99872,15,2z">
+                    </path>
+                    <circle cx="7" cy="17" r="5" class="uim-primary"></circle>
+                    <path class="uim-tertiary"
+                      d="M11,7c-3.08339,0.00031-5.66461,2.33759-5.97,5.40582c2.5358-1.08949,5.47469,0.08297,6.56418,2.61877c0.54113,1.25947,0.54113,2.68593,0,3.94541c3.29729-0.32786,5.7045-3.26663,5.37664-6.56392C16.66569,9.33735,14.08386,6.99972,11,7z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+            <div class="card service-wrapper rounded border-0 shadow p-4">
+              <div class="icon text-center text-custom h1 shadow rounded bg-white">
+                <span class="uim-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                    <path class="uim-quaternary"
+                      d="M6,23H2a.99974.99974,0,0,1-1-1V16a.99974.99974,0,0,1,1-1H6a.99974.99974,0,0,1,1,1v6A.99974.99974,0,0,1,6,23Z">
+                    </path>
+                    <path class="uim-tertiary"
+                      d="M14,23H10a.99974.99974,0,0,1-1-1V10a.99974.99974,0,0,1,1-1h4a.99974.99974,0,0,1,1,1V22A.99974.99974,0,0,1,14,23Z">
+                    </path>
+                    <path class="uim-primary"
+                      d="M22,23H18a.99974.99974,0,0,1-1-1V2a.99974.99974,0,0,1,1-1h4a.99974.99974,0,0,1,1,1V22A.99974.99974,0,0,1,22,23Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+              <div class="content mt-4">
+                <h5 class="title">Minimalism Feast</h5>
+                <p class="text-muted mt-3 mb-0">
+                  Simplicity in design means using clean lines, lots of space,
+                  and only essential elements. This makes the layout look neat
+                  and attractive, helps users read easily,
+                </p>
+              </div>
+              <div class="big-icon h1 text-custom">
+                <span class="uim-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                    <path class="uim-quaternary"
+                      d="M6,23H2a.99974.99974,0,0,1-1-1V16a.99974.99974,0,0,1,1-1H6a.99974.99974,0,0,1,1,1v6A.99974.99974,0,0,1,6,23Z">
+                    </path>
+                    <path class="uim-tertiary"
+                      d="M14,23H10a.99974.99974,0,0,1-1-1V10a.99974.99974,0,0,1,1-1h4a.99974.99974,0,0,1,1,1V22A.99974.99974,0,0,1,14,23Z">
+                    </path>
+                    <path class="uim-primary"
+                      d="M22,23H18a.99974.99974,0,0,1-1-1V2a.99974.99974,0,0,1,1-1h4a.99974.99974,0,0,1,1,1V22A.99974.99974,0,0,1,22,23Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+            <div class="card service-wrapper rounded border-0 shadow p-4">
+              <div class="icon text-center text-custom h1 shadow rounded bg-white">
+                <span class="uim-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                    <path class="uim-tertiary"
+                      d="M20 11a.99018.99018 0,0,1-.71-.29 1.16044 1.16044 0,0,1-.21-.33008.94107.94107 0,0,1 0-.75976A1.02883 1.02883 0,0,1 19.29 9.29a1.04667 1.04667 0,0,1 1.41992 0 1.14718 1.14718 0,0,1 .21.33008.94107.94107 0,0,1 0 .75976 1.16044 1.16044 0,0,1-.21.33008A.99349.99349 0,0,1 20 11zM19 6.5a1.0032 1.0032 0,0,1 1-1h0a1.0032 1.0032 0,0,1 1 1h0a1.0032 1.0032 0,0,1-1 1h0A1.0032 1.0032 0,0,1 19 6.5zM20 4a.98979.98979 0,0,1-.91992-1.37988A1.02883 1.02883 0,0,1 19.29 2.29a1.04669 1.04669 0,0,1 1.41992 0 1.02883 1.02883 0,0,1 .21.33008A.98919.98919 0,0,1 20.71 3.71a1.16044 1.16044 0,0,1-.33008.21A.9994.9994 0,0,1 20 4zM7.03027 6.24023a.99364.99364 0,0,1 .7295-1.21h0a.9907.9907 0,0,1 1.21.7295h0a.99891.99891 0,0,1-.7295 1.21h0A.96451.96451 0,0,1 8 7H8A.99122.99122 0,0,1 7.03027 6.24023zm4-1a.99364.99364 0,0,1 .7295-1.21h0a.9907.9907 0,0,1 1.21.7295h0a.99891.99891 0,0,1-.7295 1.21h0A.96451.96451 0,0,1 12 6h0A1.00294 1.00294 0,0,1 11.03027 5.24023zm4-1a.99816.99816 0,0,1 .7295-1.21h0a1.00272 1.00272 0,0,1 1.21.7295h0a.99891.99891 0,0,1-.7295 1.21h0A.96451.96451 0,0,1 16 5h0A.99122.99122 0,0,1 15.03027 4.24023zM4 8A.99042.99042 0,0,1 3 7a.83154.83154 0,0,1 .08008-.37988A1.02883 1.02883 0,0,1 3.29 6.29a1.04669 1.04669 0,0,1 1.41992 0 1.02883 1.02883 0,0,1 .21.33008A.99013.99013 0,0,1 4 8zM4 11a.99018.99018 0,0,1-.71-.29 1.16044 1.16044 0,0,1-.21-.33008.94107.94107 0,0,1 0-.75976A1.14718 1.14718 0,0,1 3.29 9.29a1.04667 1.04667 0,0,1 1.41992 0 1.14718 1.14718 0,0,1 .21.33008.94107.94107 0,0,1 0 .75976 1.16044 1.16044 0,0,1-.21.33008A.99349.99349 0,0,1 4 11zM15 10a1.0032 1.0032 0,0,1 1-1h0a1.0032 1.0032 0,0,1 1 1h0a1.0032 1.0032 0,0,1-1 1h0A1.0032 1.0032 0,0,1 15 10zm-4 0a1.0032 1.0032 0,0,1 1-1h0a1.0032 1.0032 0,0,1 1 1h0a1.0032 1.0032 0,0,1-1 1h0A1.0032 1.0032 0,0,1 11 10zM7 10A1.0032 1.0032 0,0,1 8 9H8a1.0032 1.0032 0,0,1 1 1H9a1.0032 1.0032 0,0,1-1 1H8A1.0032 1.0032 0,0,1 7 10z">
+                    </path>
+                    <polygon class="uim-primary" points="20 14 20 21 4 17 4 14 20 14"></polygon>
+                    <path class="uim-primary"
+                      d="M20,22a.97427.97427,0,0,1-.24219-.03027l-16-4A.99961.99961,0,0,1,3,17V14a.99943.99943,0,0,1,1-1H20a.99943.99943,0,0,1,1,1v7a1.0005,1.0005,0,0,1-1,1ZM5,16.21875l14,3.5V15H5Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+              <div class="content mt-4">
+                <h5 class="title">Modern Workflow</h5>
+                <p class="text-muted mt-3 mb-0">
+                  Use smart processes and tools and methods to work more
+                  efficiently. They cut distractions, focus on important
+                  tasks, and help teams succeed in fast-paced business
+                  environments.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+            <div class="card service-wrapper rounded border-0 shadow p-4">
+              <div class="icon text-center text-custom h1 shadow rounded bg-white">
+                <span class="uim-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                    <path class="uim-quaternary"
+                      d="M12,22a.99974.99974,0,0,1-1-1V3a1,1,0,0,1,2,0V21A.99974.99974,0,0,1,12,22Z"></path>
+                    <polygon class="uim-primary" points="21 12 16 7 16 17 21 12"></polygon>
+                    <path class="uim-primary"
+                      d="M16,18a1,1,0,0,1-1-1V7a.99991.99991,0,0,1,1.707-.707l5,5a.99962.99962,0,0,1,0,1.41406l-5,5A.99893.99893,0,0,1,16,18Zm1-8.58594v5.17188L19.58594,12Z">
+                    </path>
+                    <path class="uim-tertiary"
+                      d="M3 13a.99075.99075 0 0 1-.92041-1.37988A1.14883 1.14883 0 0 1 2.29 11.29a1.04669 1.04669 0 0 1 1.41992 0 1.03724 1.03724 0 0 1 .21.33008A.83792.83792 0 0 1 4 12a.99042.99042 0 0 1-1 1zM4.79 15.21a1.00761 1.00761 0 0 1 0-1.41992h0a1.00671 1.00671 0 0 1 1.41992 0h0a1.0085 1.0085 0 0 1 0 1.41992h0a1.02749 1.02749 0 0 1-.71.29h0A1.02577 1.02577 0 0 1 4.79 15.21zM8 18a.99183.99183 0 0 1-.71-.29 1.16213 1.16213 0 0 1-.21045-.33008A.99906.99906 0 0 1 7 17a1.05 1.05 0 0 1 .29-.71 1.0387 1.0387 0 0 1 1.08984-.21 1.15384 1.15384 0 0 1 .33008.21A1.05232 1.05232 0 0 1 9 17a.9994.9994 0 0 1-.08008.37988 1.17124 1.17124 0 0 1-.21.33008A.99183.99183 0 0 1 8 18zM7 13.66992a.996.996 0 0 1 1-1H8a.99632.99632 0 0 1 1 1H9a1.00319 1.00319 0 0 1-1 1H8A1.00288 1.00288 0 0 1 7 13.66992zm0-3.33984a1.00288 1.00288 0 0 1 1-1H8a1.00319 1.00319 0 0 1 1 1H9a.99693.99693 0 0 1-1 1H8A.99663.99663 0 0 1 7 10.33008zM8 8a.99075.99075 0 0 1-.92041-1.37988A1.03011 1.03011 0 0 1 7.29 6.29a.98544.98544 0 0 1 1.62988.33008A.99013.99013 0 0 1 8 8zM4.79 10.21A1.00761 1.00761 0 0 1 4.79 8.79h0A1.00671 1.00671 0 0 1 6.21 8.79h0a1.0085 1.0085 0 0 1 0 1.41992h0a1.02749 1.02749 0 0 1-.71.29h0A1.02577 1.02577 0 0 1 4.79 10.21z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+              <div class="content mt-4">
+                <h5 class="title">Unique Features</h5>
+                <p class="text-muted mt-3 mb-0">
+                  These advanced capabilities improve user experience with
+                  intuitive design and technology, meeting customer needs
+                  effectively in the marketplace.
+                </p>
+              </div>
+              <div class="big-icon h1 text-custom">
+                <span class="uim-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                    <path class="uim-quaternary"
+                      d="M12,22a.99974.99974,0,0,1-1-1V3a1,1,0,0,1,2,0V21A.99974.99974,0,0,1,12,22Z"></path>
+                    <polygon class="uim-primary" points="21 12 16 7 16 17 21 12"></polygon>
+                    <path class="uim-primary"
+                      d="M16,18a1,1,0,0,1-1-1V7a.99991.99991,0,0,1,1.707-.707l5,5a.99962.99962,0,0,1,0,1.41406l-5,5A.99893.99893,0,0,1,16,18Zm1-8.58594v5.17188L19.58594,12Z">
+                    </path>
+                    <path class="uim-tertiary"
+                      d="M3 13a.99075.99075 0 0 1-.92041-1.37988A1.14883 1.14883 0 0 1 2.29 11.29a1.04669 1.04669 0 0 1 1.41992 0 1.03724 1.03724 0 0 1 .21.33008A.83792.83792 0 0 1 4 12a.99042.99042,0 0 1-1 1zM4.79 15.21a1.00761 1.00761 0 0 1 0-1.41992h0a1.00671 1.00671 0 0 1 1.41992 0h0a1.0085 1.0085 0 0 1 0 1.41992h0a1.02749 1.02749 0 0 1-.71.29h0A1.02577 1.02577 0 0 1 4.79 15.21zM8 18a.99183.99183 0 0 1-.71-.29 1.16213 1.16213 0 0 1-.21045-.33008A.99906.99906 0 0 1 7 17a1.05 1.05 0 0 1 .29-.71 1.0387 1.0387 0 0 1 1.08984-.21 1.15384 1.15384 0 0 1 .33008.21A1.05232 1.05232 0 0 1 9 17a.9994.9994 0 0 1-.08008.37988 1.17124 1.17124 0 0 1-.21.33008A.99183.99183 0 0 1 8 18zM7 13.66992a.996.996 0 0 1 1-1H8a.99632.99632 0 0 1 1 1H9a1.00319 1.00319 0 0 1-1 1H8A1.00288 1.00288 0 0 1 7 13.66992zm0-3.33984a1.00288 1.00288 0 0 1 1-1H8a1.00319 1.00319 0 0 1 1 1H9a.99693.99693 0 0 1-1 1H8A.99663.99663 0 0 1 7 10.33008zM8 8a.99075.99075 0 0 1-.92041-1.37988A1.03011 1.03011 0 0 1 7.29 6.29a.98544.98544 0 0 1 1.62988.33008A.99013.99013 0 0 1 8 8zM4.79 10.21A1.00761 1.00761 0 0 1 4.79 8.79h0A1.00671 1.00671 0 0 1 6.21 8.79h0a1.0085 1.0085 0 0 1 0 1.41992h0a1.02749 1.02749 0 0 1-.71.29h0A1.02577 1.02577 0 0 1 4.79 10.21z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+            <div class="card service-wrapper rounded border-0 shadow p-4">
+              <div class="icon text-center text-custom h1 shadow rounded bg-white">
+                <span class="uim-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                    <path class="uim-primary"
+                      d="M12,6a.99974.99974,0,0,1,1,1v4.42249l2.09766,1.2113a1.00016,1.00016,0,0,1-1,1.73242l-2.59766-1.5A1.00455,1.00455,0,0,1,11,12V7A.99974.99974,0,0,1,12,6Z">
+                    </path>
+                    <path class="uim-tertiary"
+                      d="M2,12A10,10,0,1,0,12,2,10,10,0,0,0,2,12Zm9-5a1,1,0,0,1,2,0v4.42249l2.09766,1.2113a1.00016,1.00016,0,0,1-1,1.73242l-2.59766-1.5A1.00455,1.00455,0,0,1,11,12V7A.99974.99974,0,0,1,12,6Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+              <div class="content mt-4">
+                <h5 class="title">Support 24/7</h5>
+                <p class="text-muted mt-3 mb-0">
+                  Ensures prompt assistance day and night, enhancing
+                  satisfaction and reliability. We maintain high service
+                  standards, meeting client needs promptly and effectively.
+                </p>
+              </div>
+              <div class="big-icon h1 text-custom">
+                <span class="uim-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+                    <path class="uim-primary"
+                      d="M12,6a.99974.99974,0,0,1,1,1v4.42249l2.09766,1.2113a1.00016,1.00016,0,0,1-1,1.73242l-2.59766-1.5A1.00455,1.00455,0,0,1,11,12V7A.99974.99974,0,0,1,12,6Z">
+                    </path>
+                    <path class="uim-tertiary"
+                      d="M2,12A10,10,0,1,0,12,2,10,10,0,0,0,2,12Zm9-5a1,1,0,0,1,2,0v4.42249l2.09766,1.2113a1.00016,1.00016,0,0,1-1,1.73242l-2.59766-1.5A1.00455,1.00455,0,0,1,11,12V7A.99974.99974,0,0,1,12,6Z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- testimonial -->
+      <section class="bg-light py-5 py-xl-8">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+              <h2 class="fs-6 text-secondary mb-2 text-uppercase text-center">
+                Happy Customers
+              </h2>
+              <p class="display-5 mb-4 mb-md-5 text-center">
+                We deliver what we promise. See what clients are expressing
+                about us.
+              </p>
+              <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container overflow-hidden">
+          <div class="row gy-4 gy-md-0 gx-xxl-5">
+            <div class="col-12 col-md-4">
+              <div class="card border-0 border-bottom border-primary shadow-sm">
+                <div class="card-body p-4 p-xxl-5">
+                  <figure>
+                    <figcaption>
+                      <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+                      <blockquote class="bsb-blockquote-icon mb-4">
+                        We were so impressed with the work they did for us.
+                        They were able to take our vision and turn it into a
+                        reality, and they did it all on time and within
+                        budget. We would highly recommend them to anyone
+                        looking for a reliable partner.
+                      </blockquote>
+                      <h4 class="mb-2">Luna John</h4>
+                      <h5 class="fs-6 text-secondary mb-0">HR Manager</h5>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card border-0 border-bottom border-primary shadow-sm">
+                <div class="card-body p-4 p-xxl-5">
+                  <figure>
+                    <figcaption>
+                      <div class="bsb-ratings text-warning mb-3" data-bsb-star="4" data-bsb-star-off="1"></div>
+                      <blockquote class="bsb-blockquote-icon mb-4">
+                        We were looking for a company that could help us
+                        develop a HR systemthat was both visually appealing
+                        and user-friendly to manager our employee. We are so
+                        happy with the results, and we would highly recommend
+                        them.
+                      </blockquote>
+                      <h4 class="mb-2">Mark Smith</h4>
+                      <h5 class="fs-6 text-secondary mb-0">HR Manager</h5>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card border-0 border-bottom border-primary shadow-sm">
+                <div class="card-body p-4 p-xxl-5">
+                  <figure>
+                    <figcaption>
+                      <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+                      <blockquote class="bsb-blockquote-icon mb-4">
+                        We were looking for a company that could help us
+                        manage the tasks we assign to our employees. They were
+                        able to create an amazing system that we loved. They
+                        worked with us to develop a logo that represented our
+                        company.
+                      </blockquote>
+                      <h4 class="mb-2">Luke Reeves</h4>
+                      <h5 class="fs-6 text-secondary mb-0">HR Manager</h5>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <!-- footer section start -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50 text-center">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="../index.html"><img src="All pages/assest/images/logojpg.jpg" class="img-fluid"
+                    alt="logo" /></a>
+              </div>
+              <div class="footer-text">
+                <p>
+                  GateWay, your comprehensive solution for seamless employee
+                  management. Streamline your HR processes, enhance
+                  productivity, and empower your workforce with our intuitive
+                  and efficient platform."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30 text-center">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Useful Links</h3>
+              </div>
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+              </ul>
+              <div class="footer-social-icon">
+                <span>Follow us</span>
+                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                <a href="#"><i class="fa-brands fa-google google-bg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-50 text-center">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Our Location</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>check the map below to know our location</p>
+              </div>
+              <div class="subscribe-form">
+                <form action="#">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d433871.3814302233!2d36.27728529778018!3d31.835335365438436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5fb85d7981af%3A0x631c30c0f8dc65e8!2z2LnZhdmR2KfZhg!5e0!3m2!1sar!2sjo!4v1718740757668!5m2!1sar!2sjo"
+                    style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+            <div class="copyright-text">
+              <p>Copyright &copy;2024, All Right Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button id="btn"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="All pages/assets/javascripts/bootstrap.js"></script>
+  <script src="All pages/assets/javascripts/popper.min.js"></script>
+  <script src="All pages/assest/js/home-about.js"></script>
+  <script src="All pages/assest/js/navbar.js"></script>
+</body>
+
+</html>

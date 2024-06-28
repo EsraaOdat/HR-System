@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font Awesome -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        rel="stylesheet"
+      />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assest/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/icons.css" />
+    <link rel="stylesheet" href="assets/css/tasks.css" />
+    <link rel="stylesheet" href="assets/css/create_task.css" />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav_lc"
+            aria-controls="nav_lc"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav_lc">
+            <ul
+              class="d-none d-lg-flex navbar-nav mx-auto my-3 my-lg-0 position-absolute top-50 start-50 translate-middle"
+            >
+              <li class="nav-item me-4">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="Services.html" id="service"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_us.html">Contact Us</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav my-3 my-lg-0 d-lg-none">
+              <li class="nav-item me-4">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="Services.html" id="services"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_us.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="ms-lg-auto d-flex">
+              <a
+                class="btn btn-outline-primary me-2"
+                href="login.html"
+                id="login"
+                >Login</a
+              >
+              <a class="btn btn-primary me-2" href="register.html" id="register"
+                >Register</a
+              >
+              <a class="btn btn-outline-primary me-2" href="#" id="logout"
+                >Logout</a
+              >
+              <a class="btn btn-primary" href="Profile.html" id="profile-info"
+                >Profile</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="dashboard">
+      <div class="side-bar">
+        <div class="side-bar-log">
+          <img src="assets/images/logo.png" alt="logo" />
+          <div>
+            <h2>Gateway</h2>
+            <p>HR and task system</p>
+          </div>
+        </div>
+        <ul
+          class="side-bar-links"
+          style="padding: 0 0 0 32px; margin: 0 0 16px"
+        >
+          <li>
+            <a href="dashboard.html"
+              ><div class="dashboard-icon icon"></div>
+              <span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="employees.html"
+              ><div class="employee-icon icon"></div>
+              <span>Employees</span></a
+            >
+          </li>
+          <li class="active">
+            <a href="tasks_tracker.html"
+              ><div class="tasks-icon icon"></div>
+              <span>Tasks Tracker</span></a
+            >
+          </li>
+          <li>
+            <a href="leave_application.html"
+              ><div class="leave-icon icon"></div>
+              <span>Leaves</span></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div
+          class="modal fade"
+          id="new-task-form"
+          tabindex="-1"
+          aria-labelledby="new-task-formLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <form id="add-task-form">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="new-task-formLabel">
+                    Create New Task
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="formDiv" id="TaskTitleDiv">
+                    <label class="MainLabel" for="TaskTitle">Task Title</label>
+                    <input
+                      required
+                      type="text"
+                      id="TaskTitle"
+                      placeholder="Type name"
+                    />
+                  </div>
+
+                  <div class="formDiv" id="StatusDiv">
+                    <label class="MainLabel" for="Status">Status</label>
+                    <select name="Status" id="Status" required>
+                      <option value="to-do">To do</option>
+                      <option value="in-progress">In Progress</option>
+                      <option value="completed">Completed</option>
+                      <option value="on-hold">On Hold</option>
+                      <option value="canceled">Canceled</option>
+                    </select>
+                  </div>
+
+                  <div class="formDiv" id="PriorityDiv">
+                    <label class="MainLabel" id="PriorityLabel" for="Priority"
+                      >Priority</label
+                    >
+                    <div id="PrioritiesOptions">
+                      <div id="HighDiv">
+                        <input
+                          required
+                          type="radio"
+                          name="Priority"
+                          value="high"
+                          id="High"
+                          class="priorityClass"
+                        />
+                        <label for="High">High</label>
+                      </div>
+                      <div id="MediumDiv">
+                        <input
+                          type="radio"
+                          name="Priority"
+                          value="medium"
+                          id="Medium"
+                          class="priorityClass"
+                          required
+                        />
+                        <label for="Medium">Medium</label>
+                      </div>
+                      <div id="LowDiv">
+                        <input
+                          required
+                          type="radio"
+                          value="low"
+                          name="Priority"
+                          id="Low"
+                          class="priorityClass"
+                        />
+                        <label for="Low">Low</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="formDiv" id="StartDateDiv">
+                    <label class="MainLabel" for="StartDate">Start Date</label>
+                    <input
+                      type="date"
+                      name="StartDate"
+                      id="StartDate"
+                      required
+                    />
+                  </div>
+
+                  <div class="formDiv" id="DueDateDiv">
+                    <label class="MainLabel" for="DueDate">Due Date</label>
+                    <input type="date" name="DueDate" id="DueDate" required />
+                  </div>
+
+                  <div class="formDiv" id="DescriptionDiv">
+                    <label class="MainLabel" for="Description"
+                      >Description</label
+                    >
+                    <textarea
+                      required
+                      name="Description"
+                      id="Description"
+                      placeholder="Write description of the task and provide example"
+                    ></textarea>
+                  </div>
+
+                  <div class="formDiv" id="AssignMembersDiv">
+                    <label class="MainLabel" for="AssignMembersSelect"
+                      >Assign To Members</label
+                    >
+                    <div id="membersContainer">
+                      <select
+                        required
+                        name="members"
+                        id="AssignMembersSelect"
+                        class="select-dropdown"
+                      >
+                        <option value="" disabled selected>+ Add person</option>
+                      </select>
+                      <span id="selected-employees"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="submit" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="header my-4">
+            <h1>Task Tracking</h1>
+            <button
+              class="btn btn-primary me-2"
+              data-bs-toggle="modal"
+              data-bs-target="#new-task-form"
+            >
+              <i class="bi bi-plus-square me-2"></i> Add a new task
+            </button>
+          </div>
+          <div class="tasks">
+            <div class="tasks-group to-do">
+              <div class="tasks-group-header">
+                <h5>To do</h5>
+                <span>(0)</span>
+              </div>
+              <div class="tasks-container"></div>
+            </div>
+            <div class="tasks-group in-progress">
+              <div class="tasks-group-header">
+                <h5>In progress</h5>
+                <span>(0)</span>
+              </div>
+              <div class="tasks-container"></div>
+            </div>
+            <div class="tasks-group on-hold">
+              <div class="tasks-group-header">
+                <h5>On hold</h5>
+                <span>(0)</span>
+              </div>
+              <div class="tasks-container"></div>
+            </div>
+            <div class="tasks-group completed">
+              <div class="tasks-group-header">
+                <h5>Completed</h5>
+                <span>(0)</span>
+              </div>
+              <div class="tasks-container"></div>
+            </div>
+            <div class="tasks-group canceled">
+              <div class="tasks-group-header">
+                <h5>Canceled</h5>
+                <span>(0)</span>
+              </div>
+              <div class="tasks-container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50 text-center">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="../index.html"
+                    ><img
+                      src="assest/images/logojpg.jpg"
+                      class="img-fluid"
+                      alt="logo"
+                  /></a>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    GateWay, your comprehensive solution for seamless employee
+                    management. Streamline your HR processes, enhance
+                    productivity, and empower your workforce with our intuitive
+                    and efficient platform."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30 text-center">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="about.html">about</a></li>
+                  <li><a href="contact_us.html">Contact</a></li>
+                </ul>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fa-brands fa-google google-bg"></i>
+</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50 text-center">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Our Location</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>check the map below to know our location</p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d433871.3814302233!2d36.27728529778018!3d31.835335365438436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5fb85d7981af%3A0x631c30c0f8dc65e8!2z2LnZhdmR2KfZhg!5e0!3m2!1sar!2sjo!4v1718740757668!5m2!1sar!2sjo"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>Copyright &copy;2024, All Right Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+    <script src="assets/javascripts/bootstrap.js"></script>
+    <script src="assets/javascripts/create_new_task.js"></script>
+    <script src="assest/js/navbar.js"></script>
+  </body>
+</html>
